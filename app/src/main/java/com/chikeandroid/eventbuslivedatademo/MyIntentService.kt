@@ -11,7 +11,7 @@ import android.os.SystemClock
 class MyIntentService: IntentService("MyIntentService") {
 
     companion object {
-        var BUS = MutableLiveData<CustomEvent>()
+        val BUS = MutableLiveData<CustomEvent>()
     }
 
     override fun onHandleIntent(intent: Intent?) {
